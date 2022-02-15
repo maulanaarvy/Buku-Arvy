@@ -1,5 +1,21 @@
 h2 {
-  padding-left: 20px;
   margin: 5px;
-  /* background-color: red; */
 }
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* *Table Start */
+.nomor-auto {
+  /* counter-reset: serial-number; /* Atur penomoran ke 0*/
+}
+.nomor-auto tr:nth-of-type(odd) {
+  background: #eee;
+}
+.nomor-auto td:first-child:before {
+  /* content: counter(serial-number); /* Tampilan counter */
+  /* counter-increment: serial-number; /* Kenaikan Penomoran */
+}
+.nomor-manual {
+  text-align: center;
+}/* !Table End */
