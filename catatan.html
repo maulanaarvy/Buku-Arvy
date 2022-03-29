@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisis Sentimen</title>
+  <style>
+    body {
+      background-image: url(../../Wallpaper/bg1.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Catatan</h1>
+  <hr><hr color="red">
+  <ol>
+    <!--* Tahap 1 -->
+    <li>Tahap <i>Crawling</i></li>
+    <p><i>Crawling</i> adalah proses untuk mendapatkan kemudian mengumpulkan informasi yang berasal dari halaman web. Cara kerja <i>crawling</i> yaitu dengan mendata beberapa <i>link web</i> kemudian nantinya link tersebut akan dikunjungi satu persatu. Pada tahap ini, sistem akan mengambil data berupa komentar dari <i>source Facebook</i>. Dalam melakukan pengambilan data, <i>crawling</i> untuk Facebook menggunakan <i>Instan Data Scrapper</i></p>
+
+    <!--* Tahap 2 -->
+    <li>Tahap <i>Preprocessing Data</i></li>
+    <p><i>Preprocessing</i> merupakan proses pengolahan data untuk menyeragamkan setiap kata agar mempermudah pembacaan dan proses analisis sentimen. Dalam penelitian ini beberapa tahap <i>preprocessing</i> yang dilakukan antara lain :</p>
+    <ol>
+      <li><i>Cleaning</i></li>
+      <p>Membersihkan karakter atau simbol</p>
+      <table border="1" bgcolor="darkslategray">
+        <tr>
+          <td><b>NO</b></td>
+          <td><b>Komentar</b></td>
+          <td><b>Hasil <i>Cleaning</i></b></td>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Aplikasi ini bagus banget !!!</td>
+          <td>Aplikasi ini bagus banget</td>
+        </tr>
+      </table>
+      <li><i>Case Folding</i></li>
+      <p>Mengubah semua huruf menjadi kecil</p>
+      <li><i>Filtering / Stopwords</i></li>
+      <p>Menghilangkan kata-kata yang kurang penting yang dikhawatirkan akan mengganggu proses klasifikasi.</p>
+      <li><i>Stemming</i></li>
+      <p>Mengembalikan kata ke bentuk kata dasar.</p>
+      <li><i>Tokenizing</i></li>
+      <p>Memecah kalimat menjadi kata tunggal</p>
+      <li>Pembobotan</li>
+      <p>Menggunakan TF (<i>Term Frekuensi</i>) / jumlah kemunculan kata</p>
+    </ol>
+  </ol>
+
+</body>
+</html>
