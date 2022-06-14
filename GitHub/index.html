@@ -1,272 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Git & Hub</title>
-</head>
-<body>
-  <h1>Git & Hub</h1>
-  <hr>
-	<hr class="header1" color="red">
-  <a href="../index.html">back</a>
-  <div class="container">   
-    <h2>Deskripsi</h2>
-    <table class="nomor-auto" cellspacing="0" cellpadding="1">
-      <tr>
-        <td class="nomor-manual">1.</td>
-        <td>Branch</td>
-        <td>: Cabang, cabang commit</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">2.</td>
-        <td>Checkout</td>
-        <td>: Berpindah ke sebuah branch [Master]</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">3.</td>
-        <td>Clone</td>
-        <td>: Menduplikat repo dari remote(akun kita) ke pc</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">4.</td>
-        <td>Commit</td>
-        <td>: Menyimpan riwayat perubahan file repo</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">5.</td>
-        <td>Fork</td>
-        <td>: Menduplikat repo original(milik orang lain) dari github beserta history nya
-        </td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">6.</td>
-        <td>Hash</td>
-        <td>: Kode unik hasil commit [42e769bdf4894310333]</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">7.</td>
-        <td>Merge</td>
-        <td>: Menggabungkan, menggabungkan cabang [branch]</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">8.</td>
-        <td>Pull</td>
-        <td>: Tarik, Mengambil file repo dari github ke pc</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">9.</td>
-        <td>Push</td>
-        <td>: Dorong, Mengirimkan file repo dari pc ke github</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">10.</td>
-        <td>Remote</td>
-        <td>: Sumber repo [Github]</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">11.</td>
-        <td>Repo</td>
-        <td>: Folder tempat file source code (Repository)</td>
-      </tr>
-    </table>
-    <hr>
-  </div>
-  <hr>
-  <div class="container">
-    <h2>Code</h2>
-    <table class="nomor-auto" cellspacing="0" cellpadding="1">
-      <tr>
-        <td class="nomor-manual">1.</td>
-        <td>git</td>
-        <td>: Help, cara menggunakan git</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">2.</td>
-        <td>git --version</td>
-        <td>: Mengecek versi git</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">4.</td>
-        <td>git add .</td>
-        <td>: Menambahkan semua folder ke staging area (sebelum commit)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">3.</td>
-        <td>git add 'FileName'</td>
-        <td>: Menambahkan folder ke staging area (sebelum commit)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">5.</td>
-        <td>git branch</td>
-        <td>: Membuat branch (cabang)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">6.</td>
-        <td>git commit</td>
-        <td>: Untuk melakukan commit</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">7.</td>
-        <td class="small">git commit -m "Pesan"</td>
-        <td>: Untuk melakukan commit</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">8.</td>
-        <td class="small">git commit -am "Pesan"</td>
-        <td>: Untuk melakukan commit tanpa git add (modified)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">9.</td>
-        <td>git config</td>
-        <td>: Configurasi kedalam git</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">10.</td>
-        <td colspan="2">git config --global user.name "UsernameGithub"</td>
-        <!-- <td></td> -->
-      </tr>
-      <tr>
-        <td class="nomor-manual">11.</td>
-        <td colspan="2">git config --global user.email "EmailnameGithub"</td>
-        <!-- <td></td> -->
-      </tr>
-      <tr>
-        <td class="nomor-manual">12.</td>
-        <td>git help</td>
-        <td>: Mengetahui perintah dalam git</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">13.</td>
-        <td>git init</td>
-        <td>: Merubah folder menjadi repo</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">14.</td>
-        <td>git status</td>
-        <td>: Mengetahui status repo (File berubah,hilang/bertambah)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">15.</td>
-        <td class="small">git rm --cached 'FileName'</td>
-        <td>: Untuk meremove file/folder yang berada di staging area</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">16.</td>
-        <td>cd</td>
-        <td>: change direktori, pindah direktori</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">17.</td>
-        <td>clear</td>
-        <td>: Menghapus history layar git bash</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">18.</td>
-        <td>ls</td>
-        <td>: Mengetahui isi folder (list)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">19.</td>
-        <td>pwd</td>
-        <td>: print working directori (mengetahui letak direktori)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">20.</td>
-        <td colspan="2">q : keluar | q! : keluar dari editor vim</td>
-        <!-- <td></td> -->
-      </tr>
-      <tr>
-        <td class="nomor-manual">21.</td>
-        <td>git pull</td>
-        <td>: Untuk mengambil commit dari github</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">22.</td>
-        <td>git push</td>
-        <td>: Untuk mengirim commit ke github</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">23.</td>
-        <td>git log</td>
-        <td>: Melihat seluruh histori commit</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">24.</td>
-        <td>git log -3</td>
-        <td>: Melihat histori commit 3x terakhir</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">25.</td>
-        <td>git log -- style.css</td>
-        <td>: Melihat histori commit pada file style.css (bisa nama file yg lain)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">26.</td>
-        <td>git checkout 'branch/hash'</td>
-        <td>: Berpindah ke branch/hash </td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">27.</td>
-        <td class="small">git checkout 'branch/hash' -- style.css</td>
-        <td>: Mengembalikan file style.css di branch/hash tersebut</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">28.</td>
-        <td>git remote -v</td>
-        <td>: Mengecek alamat remote (fetch / push)</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">29.</td>
-        <td>git remote</td>
-        <td>: Mengecek nama remote</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">30.</td>
-        <td colspan="2">$ alias graph="git log --all --decorate --oneline --graph" : membuat graph</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">31.</td>
-        <td>git config --list</td>
-        <td>: Mengecek nama dan email user pc</td>
-      </tr>
-      <tr>
-        <td class="nomor-manual">32.</td>
-        <td>git fetch</td>
-        <td>: Mengecek repo di github apakah sudah sama dengan di pc</td>
-      </tr>
-    </table>
-    <hr>
-  </div>
-  <hr>
-  <div class="container">
-    <h2>Tutorial</h2>
-    <ol>
-      <li>Dari Github ke pc</li>
-      <ul>
-        <li>Salin url repository</li>
-        <li>Pilih tempat repo, lalu buka git bash</li>
-        <li>$ git clone 'url_repository' &lt;enter></li>
-        <li>/* update data dari github ke pc : $ git pull &lt;enter> */</li>
-      </ul>
-      <li>Dari Pc ke Github</li>
-      <ul>
-        <li>Pilih folder yang ingin di jadikan repo</li>
-        <li>buka git bash</li>
-        <li>$ git init &lt;enter></li>
-        <li>$ git add .</li>
-        <li>$ git commit -m "Pesan"</li>
-        <li>Bikin repo baru di github (nama reponya sama dengan folder di pc)</li>
-        <li>with a README nya jgn di ceklis</li>
-        <li>salin : git remote add origin 'url_github.git', ke git bash &lt;enter></li>
-        <li>git push -u origin master &lt;enter></li>
-        <li>/* update data dari pc ke github : $ git push &lt;enter> */</li>
-      </ul>
-    </ol>
-    <hr>
-  </div>
-  <hr>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Git & Hub</title>
+  </head>
+  <body>
+    <h1>Git & Hub</h1>
+    <hr />
+    <hr class="header1" color="red" />
+    <a href="../index.html">back</a>
+    <div class="container">
+      <h2>Deskripsi</h2>
+      <table class="nomor-auto" cellspacing="0" cellpadding="1">
+        <tr>
+          <td class="nomor-manual">1.</td>
+          <td>Branch</td>
+          <td>: Cabang, cabang commit</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">2.</td>
+          <td>Checkout</td>
+          <td>: Berpindah ke sebuah branch [Master]</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">3.</td>
+          <td>Clone</td>
+          <td>: Menduplikat repo dari remote(akun kita) ke pc</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">4.</td>
+          <td>Commit</td>
+          <td>: Menyimpan riwayat perubahan file repo</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">5.</td>
+          <td>Fork</td>
+          <td>
+            : Menduplikat repo original(milik orang lain) dari github beserta
+            history nya
+          </td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">6.</td>
+          <td>Hash</td>
+          <td>: Kode unik hasil commit [42e769bdf4894310333]</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">7.</td>
+          <td>Merge</td>
+          <td>: Menggabungkan, menggabungkan cabang [branch]</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">8.</td>
+          <td>Pull</td>
+          <td>: Tarik, Mengambil file repo dari github ke pc</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">9.</td>
+          <td>Push</td>
+          <td>: Dorong, Mengirimkan file repo dari pc ke github</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">10.</td>
+          <td>Remote</td>
+          <td>: Sumber repo [Github]</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">11.</td>
+          <td>Repo</td>
+          <td>: Folder tempat file source code (Repository)</td>
+        </tr>
+      </table>
+      <hr />
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Code</h2>
+      <table class="nomor-auto" cellspacing="0" cellpadding="1">
+        <tr>
+          <td class="nomor-manual">1.</td>
+          <td>git</td>
+          <td>: Help, cara menggunakan git</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">2.</td>
+          <td>git --version</td>
+          <td>: Mengecek versi git</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">4.</td>
+          <td>git add .</td>
+          <td>: Menambahkan semua folder ke staging area (sebelum commit)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">3.</td>
+          <td>git add 'FileName'</td>
+          <td>: Menambahkan folder ke staging area (sebelum commit)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">5.</td>
+          <td>git branch</td>
+          <td>: Membuat branch (cabang)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">6.</td>
+          <td>git commit</td>
+          <td>: Untuk melakukan commit</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">7.</td>
+          <td class="small">git commit -m "Pesan"</td>
+          <td>: Untuk melakukan commit</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">8.</td>
+          <td class="small">git commit -am "Pesan"</td>
+          <td>: Untuk melakukan commit tanpa git add (modified)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">9.</td>
+          <td>git config</td>
+          <td>: Configurasi kedalam git</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">10.</td>
+          <td colspan="2">git config --global user.name "UsernameGithub"</td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td class="nomor-manual">11.</td>
+          <td colspan="2">git config --global user.email "EmailnameGithub"</td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td class="nomor-manual">12.</td>
+          <td>git help</td>
+          <td>: Mengetahui perintah dalam git</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">13.</td>
+          <td>git init</td>
+          <td>: Merubah folder menjadi repo</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">14.</td>
+          <td>git status</td>
+          <td>: Mengetahui status repo (File berubah,hilang/bertambah)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">15.</td>
+          <td class="small">git rm --cached 'FileName'</td>
+          <td>: Untuk meremove file/folder yang berada di staging area</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">16.</td>
+          <td>cd</td>
+          <td>: change direktori, pindah direktori</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">17.</td>
+          <td>clear</td>
+          <td>: Menghapus history layar git bash</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">18.</td>
+          <td>ls</td>
+          <td>: Mengetahui isi folder (list)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">19.</td>
+          <td>pwd</td>
+          <td>: print working directori (mengetahui letak direktori)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">20.</td>
+          <td colspan="2">q : keluar | q! : keluar dari editor vim</td>
+          <!-- <td></td> -->
+        </tr>
+        <tr>
+          <td class="nomor-manual">21.</td>
+          <td>git pull</td>
+          <td>: Untuk mengambil commit dari github</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">22.</td>
+          <td>git push</td>
+          <td>: Untuk mengirim commit ke github</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">23.</td>
+          <td>git log</td>
+          <td>: Melihat seluruh histori commit</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">24.</td>
+          <td>git log -3</td>
+          <td>: Melihat histori commit 3x terakhir</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">25.</td>
+          <td>git log -- style.css</td>
+          <td>
+            : Melihat histori commit pada file style.css (bisa nama file yg
+            lain)
+          </td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">26.</td>
+          <td>git checkout 'branch/hash'</td>
+          <td>: Berpindah ke branch/hash</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">27.</td>
+          <td class="small">git checkout 'branch/hash' -- style.css</td>
+          <td>: Mengembalikan file style.css di branch/hash tersebut</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">28.</td>
+          <td>git remote -v</td>
+          <td>: Mengecek alamat remote (fetch / push)</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">29.</td>
+          <td>git remote</td>
+          <td>: Mengecek nama remote</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">30.</td>
+          <td colspan="2">
+            $ alias graph="git log --all --decorate --oneline --graph" : membuat
+            graph
+          </td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">31.</td>
+          <td>git config --list</td>
+          <td>: Mengecek nama dan email user pc</td>
+        </tr>
+        <tr>
+          <td class="nomor-manual">32.</td>
+          <td>git fetch</td>
+          <td>: Mengecek repo di github apakah sudah sama dengan di pc</td>
+        </tr>
+      </table>
+      <hr />
+    </div>
+    <hr />
+    <div class="container">
+      <h2>Tutorial</h2>
+      <ol>
+        <li>Dari Github ke pc</li>
+        <ul>
+          <li>Salin url repository</li>
+          <li>Pilih tempat repo, lalu buka git bash</li>
+          <li>$ git clone 'url_repository' &lt;enter></li>
+          <li>/* update data dari github ke pc : $ git pull &lt;enter> */</li>
+        </ul>
+        <li>Dari Pc ke Github</li>
+        <ul>
+          <li>Pilih folder yang ingin di jadikan repo</li>
+          <li>buka git bash</li>
+          <li>$ git init &lt;enter></li>
+          <li>$ git add .</li>
+          <li>$ git commit -m "Pesan"</li>
+          <li>
+            Bikin repo baru di github (nama reponya sama dengan folder di pc)
+          </li>
+          <li>with a README nya jgn di ceklis</li>
+          <li>
+            salin : git remote add origin 'url_github.git', ke git bash
+            &lt;enter>
+          </li>
+          <li>git push -u origin master &lt;enter></li>
+          <li>/* update data dari pc ke github : $ git push &lt;enter> */</li>
+        </ul>
+      </ol>
+      <hr />
+    </div>
+    <hr />
+  </body>
 </html>

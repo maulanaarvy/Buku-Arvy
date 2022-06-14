@@ -1,5 +1,10 @@
 h2 {
-  margin: 5px;
+  margin: 5px 0;
+  padding-left: 7px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: white;
+  background-color: #04aa6d;
 }
 ol {
   margin: 4px;
@@ -7,17 +12,33 @@ ol {
 ul {
   padding-left: 18px;
   list-style: square;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+li {
+  padding: 4px;
 }
 .container {
   padding-left: 20px;
   padding-right: 20px;
 }
 /* *Table Start */
-.nomor-auto {
+.nomor-auto,
+.container {
   /* counter-reset: serial-number; /* Atur penomoran ke 0*/
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.nomor-auto td {
+  padding: 8px;
+  border: 1px solid #ddd;
 }
 .nomor-auto tr:nth-of-type(odd) {
   background: #eee;
+}
+.nomor-auto tr:hover {
+  background-color: #ddd;
 }
 .nomor-auto td:first-child:before {
   /* content: counter(serial-number); /* Tampilan counter */
@@ -25,7 +46,7 @@ ul {
 }
 .nomor-manual {
   text-align: center;
-}/* !Table End */
+} /* !Table End */
 .small {
   font-size: 14px;
 }

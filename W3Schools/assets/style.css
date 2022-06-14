@@ -1,0 +1,8 @@
+body {
+  background-color: dodgerblue;
+}
+.judul {
+  font-size: 10em;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.45);
+}
